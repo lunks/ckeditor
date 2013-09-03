@@ -4,15 +4,9 @@ gemspec
 
 gem "rails", "4.0.0"
 
-platforms :mri_18 do
-  group :test do
-    gem 'ruby-debug'
-    gem 'SystemTimer'
-  end
-end
-
 platforms :ruby do
   gem "sqlite3"
+  gem 'jquery-rails'
 
   group :development do
     gem "unicorn", "~> 4.0.1"
