@@ -65,7 +65,10 @@ GEM
       mongoid
     childprocess (0.3.1)
       ffi (~> 1.0.6)
-    cocaine (0.2.1)
+    climate_control (0.0.3)
+      activesupport (>= 3.0)
+    cocaine (0.5.1)
+      climate_control (>= 0.0.3, < 1.0)
     columnize (0.3.6)
     dragonfly (0.9.12)
       rack
@@ -93,11 +96,10 @@ GEM
     nokogiri (1.5.2)
     origin (1.1.0)
     orm_adapter (0.4.0)
-    paperclip (3.0.3)
+    paperclip (3.5.1)
       activemodel (>= 3.0.0)
-      activerecord (>= 3.0.0)
       activesupport (>= 3.0.0)
-      cocaine (>= 0.0.2)
+      cocaine (~> 0.5.0)
       mime-types
     polyglot (0.3.3)
     rack (1.5.2)
@@ -172,7 +174,7 @@ DEPENDENCIES
   mongoid!
   mongoid-paperclip
   mynyml-redgreen (~> 0.7.1)
-  paperclip (~> 3.0.3)
+  paperclip (> 3.0.3)
   rails (= 4.0.0)
   ruby-debug
   sqlite3
